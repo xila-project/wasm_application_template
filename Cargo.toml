@@ -1,16 +1,16 @@
 [package]
-name = "Test"
+name = "xila-wasm-app"
 version = "0.1.0"
-edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+edition = "2024"
+description = "A starter Rust WebAssembly application for Xila."
 
 [profile.release]
 lto = true
-opt-level = 's'
+opt-level = "s"
 strip = true
-#codegen-units = 1
 
-[dependencies]
-Rust_SDK = { path = "../Rust_SDK" }
-wee_alloc = "0.4.5"
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm = { git = "https://github.com/Xila-Project/Core", package = "wasm", default-features = false, features = [
+  "guest",
+  "memory_32",
+] }
