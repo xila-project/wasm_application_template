@@ -1,4 +1,13 @@
-# Xila WebAssembly Application Template
+<h1>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/brand/header-dark.svg">
+  <img src=".github/brand/header-light.svg" alt="Xila WebAssembly app template — A Rust starter for your first Xila application." width="1280">
+</picture>
+</h1>
+
+[Documentation](https://www.xila.dev/docs/) ·
+[Try Xila](https://platforms.xila.dev/) ·
+[Community](https://matrix.to/#/#xila:anneraud.fr)
 
 Build your first **Rust WebAssembly (WASM) application for [Xila](https://github.com/Xila-Project/Core)**. This lightweight starter follows the same `wasm32-wasip1` target and guest-crate setup used by Xila's built-in applications, without relying on an unpublished SDK package.
 
@@ -58,3 +67,13 @@ Repository maintainers can enable the template button in GitHub: open **Settings
 - [Xila Core](https://github.com/Xila-Project/Core)
 - [Xila built-in WASM applications](https://github.com/Xila-Project/Core/tree/main/executables)
 - [Rust WebAssembly documentation](https://rustwasm.github.io/docs/book/)
+
+<!-- xila:footer:start -->
+
+---
+
+Part of **[Xila](https://www.xila.dev/)** ·
+[Repositories](https://github.com/xila-project) ·
+[Community](https://matrix.to/#/#xila:anneraud.fr)
+
+<!-- xila:footer:end -->
