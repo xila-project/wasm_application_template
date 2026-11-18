@@ -9,6 +9,8 @@
 [Try Xila](https://platforms.xila.dev/) ·
 [Community](https://matrix.to/#/#xila:anneraud.fr)
 
+[![vulnerabilities](https://vulnerabilities.xila.dev/badges/fd85d38863c4fb58de5fb2bbec143ef7.svg)](https://vulnerabilities.xila.dev/public/0778c05f0afea4ec05f2b0be46f704e4)
+
 Build your first **Rust WebAssembly (WASM) application for [Xila](https://github.com/Xila-Project/Core)**. This lightweight starter follows the same `wasm32-wasip1` target and guest-crate setup used by Xila's built-in applications, without relying on an unpublished SDK package.
 
 Use this repository as a GitHub template, clone it, customize the Rust app, and build a `.wasm` guest for the Xila runtime.
