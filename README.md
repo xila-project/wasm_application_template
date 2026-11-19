@@ -17,15 +17,11 @@ Use this repository as a GitHub template, clone it, customize the Rust app, and 
 
 ## Requirements
 
-- [Rust](https://www.rust-lang.org/tools/install) with Cargo
-- The `wasm32-wasip1` Rust target
+- [Rustup](https://www.rust-lang.org/tools/install) with Cargo
 - Git access to the [Xila Core repository](https://github.com/Xila-Project/Core)
 
-Install the target with:
-
-```sh
-rustup target add wasm32-wasip1
-```
+Rustup reads `rust-toolchain.toml` to select Rust 1.97.0 and install the
+`wasm32-wasip1` target.
 
 ## Create your application
 
@@ -59,6 +55,15 @@ To check the WebAssembly app without producing an optimized binary, run:
 ```sh
 cargo check
 ```
+
+## Development
+
+**Rust version.** Use Rust 1.97.0 for development and CI builds and declare 1.97
+as the MSRV (`rust-version`), following the esp-rs Xtensa toolchain base. Use
+only language features and `std` or `core` APIs available in Rust 1.97. Raise
+the version only when esp-rs publishes a new base, and update every Xila
+repository together. Rust native executables that use `build-std` use a
+separate nightly toolchain ([xila-project/core#687](https://github.com/xila-project/core/issues/687)).
 
 ## GitHub template repository
 
