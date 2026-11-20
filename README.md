@@ -77,7 +77,7 @@ Repository maintainers can enable the template button in GitHub: open **Settings
 
 ## License
 
-This template is released under the [MIT License](LICENSE). Applications created from it may use any license.
+This template is released under the [MIT License](LICENSE), except the `.github/brand/` header assets, which are covered by their own notice. Applications created from it may use any license.
 
 <!-- xila:footer:start -->
 
