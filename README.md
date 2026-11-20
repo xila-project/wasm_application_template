@@ -75,6 +75,10 @@ Repository maintainers can enable the template button in GitHub: open **Settings
 - [Xila built-in WASM applications](https://github.com/Xila-Project/Core/tree/main/executables)
 - [Rust WebAssembly documentation](https://rustwasm.github.io/docs/book/)
 
+## License
+
+This template is released under the [MIT License](LICENSE), except the `.github/brand/` header assets, which are covered by their own notice. Applications created from it may use any license.
+
 <!-- xila:footer:start -->
 
 ---
