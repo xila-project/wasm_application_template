@@ -37,6 +37,13 @@ The Xila guest dependency uses the Git repository directly because Xila is not y
 cargo build --release --target wasm32-wasip1
 ```
 
+The Cargo target configuration links with 1-byte pages to reduce the guest's
+initial linear memory. If you target an older Xila runtime, set
+`--page-size=65536` in `.cargo/config.toml`. If you run Binaryen's
+`wasm-opt` on a byte-page guest, pass `--enable-custom-page-sizes`. Any
+guest code that calls `memory.size` or `memory.grow` uses the linked page
+size as its unit.
+
 The WebAssembly binary is created at:
 
 ```text
